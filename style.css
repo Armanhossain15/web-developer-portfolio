@@ -14,7 +14,11 @@
     width: 1180px;
     height: auto;
 }
-
+i{
+    font-weight: 200;
+    font-size: 20px;
+    margin-right: 5px;
+}
 button, .submit {
     padding: 14px 30px;
     background-color: #FD6E0A;
@@ -145,4 +149,5 @@ form textarea, input[type="text"], input[type="email"] {
     border: none;
     background-color: white;
 }
+
 /* footer */
