@@ -3,7 +3,9 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
+.hide{
+    display: none;
+}
 .flex {
     display: flex;
     justify-content: space-between;
@@ -96,7 +98,11 @@ nav {
 .what-i-do-img {
     padding: 10px 0;
 }
-
+.what-i-do-content{
+    padding: 0 150px; 
+    margin: auto; 
+    text-align: center;
+}
 .what-i-do-title {
     margin: 10px 0;
 }
@@ -149,5 +155,97 @@ form textarea, input[type="text"], input[type="email"] {
     border: none;
     background-color: white;
 }
-
+.footer-column{
+    width: 50%;
+}
 /* footer */
+
+.about .about-content{
+     max-width: 90%;                   /*  not working on responsive */
+}
+
+/* media quwey */
+
+@media screen and (max-width:576px) {
+    .what-i-do-content{
+        padding: 0 20px;
+        margin: 0;
+    }
+    .dev-img{
+        display: none;
+    }
+    .about{
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+    .about-content{
+        max-width: 90%;                /*  not working on responsive */
+    }
+    .about-info-title{
+        margin-bottom: 15px;
+    }
+    .what-i-do {
+        padding: 5px 0;
+        margin: unset;
+    }
+    .about-info, .what-i-do-div, .edu-and-ex, .footer-content, .banner{
+        flex-direction: column;
+        
+    }
+    .fixed-width{
+        width: unset;
+        margin: unset;
+    }
+    
+   .subdiv-header{
+    font-size: 25px;
+   }
+   .edu-subdiv-title{
+    font-size: 20px;
+   }
+   .edu-and-ex{                     /*not working*/
+    margin:0 20px;
+}
+.footer-content{
+    padding: 0px 0;
+}
+.contact-left, .contact-right{
+    width: 80%;
+}
+}
+
+/* media quwey */
+
+
+@media screen and (min-width:577px) and (max-width:960px){
+    .what-i-do{
+        margin: 0 10px;
+    }
+    .what-i-do-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0;
+    }
+    .fixed-width{
+        width: unset;
+        margin: unset;
+    }
+    .what-i-do-content{
+        padding: 0 80px;
+    }
+    .footer-content{
+        gap: 0;
+    }
+    .footer-content, .edu-and-ex{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+    }
+    .footer-items,.edu{
+        padding: 0 30px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+}
